@@ -7,7 +7,7 @@ jobs:
   triage:
     runs-on: ubuntu-20.04
     steps:
-      - uses: mschilde/auto-label-merge-conflicts@2e8fcc76c6430272ec8bb64fb74ec1592156aa6a
+      - uses: mschilde/auto-label-merge-conflicts@5981f8933e92b78098af86b9e33fe0871cc7a3be
         with:
           CONFLICT_LABEL_NAME: 'Merge Conflict'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
