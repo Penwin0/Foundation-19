@@ -19,7 +19,7 @@ jobs:
           echo "::set-output name=ACTIONS_ENABLED::$SECRET_EXISTS"
       - name: "Setup python"
         if: steps.value_holder.outputs.ACTIONS_ENABLED
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@b55428b1882923874294fa556849718a1d7f2ca5
         with:
           python-version: '3.x'
       - name: "Install deps"
